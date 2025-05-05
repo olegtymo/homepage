@@ -1,12 +1,307 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>Résumé</title>
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
-― Hello World! &#x1F609;
+<main>
+    <header class="header">
+        <div class="header-inner container">
+            <div class="logo-wrapper">
+                <img class="logo" src="assets/favicon.png" alt="Logo"/>
+            </div>
+            <nav>
+                <div>
+                    <ul class="menu">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="bars">
+                    <i class="ri-menu-2-fill"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="resume">
+        <section class="hero">
+            <div class="container">
+                <h1 class="contact-info__header">Oleh Tymoshenko</h1>
+
+                <div class="contact_info_container">
+                    <div class="contact-info__block contact-info__block--center">
+                        <img class="contact-info__avatar" src="assets/avatar.jpg" alt="Avatar"/>
+                    </div>
+
+                    <div class="contact-info__block contact-info__block--right">
+                        <p class="suptitle">Hello, I'm</p>
+                        <h1 class="title">Oleh</h1>
+                        <p class="position">Frontend Developer</p>
+                        <div class="socials-container">
+                            <img
+                                    src="./assets/linkedin.png"
+                                    alt="My LinkedIn profile"
+                                    class="icon"
+                                    onclick="location.href='https://www.linkedin.com/in/oleg-tymoshenko-aa3112133/'"
+                            />
+                            <img
+                                    src="./assets/github.png"
+                                    alt="My Github profile"
+                                    class="icon"
+                                    onclick="location.href='https://github.com/olegtymo'"
+                            />
+                        </div>
+                        <!--                        <p>Hi, I`m Oleh, a passionate Full-Stack Developer dedicated to creating user-friendly digital experience.</p>-->
+                        <!--                    <button class="button">Get in touch</button>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container">
+                <p class="suptitle">Get To Know More</p>
+                <h1 class="title">About Me</h1>
+                <div class="section-container">
+                    <div class="image-container">
+                        <img
+                                src="./assets/person.jpg"
+                                alt="Profile picture"
+                                class="about-pic"
+                        />
+                    </div>
+                    <div class="about-details-container">
+                        <div class="about-containers">
+                            <div class="details-container">
+                                <img
+                                        src="./assets/experience.png"
+                                        alt="Experience icon"
+                                        class="icon"
+                                />
+                                <h3>Experience</h3>
+                                <p>1.5+ years <br/>Full-Stack Development</p>
+                            </div>
+                            <div class="details-container">
+                                <img
+                                        src="./assets/education.png"
+                                        alt="Education icon"
+                                        class="icon"
+                                />
+                                <h3>Education</h3>
+                                <ul class="education__list">
+                                    <li class="education__item">Master's degree in Computer Science at National
+                                        University «Yuri Kondratyuk Poltava Polytechnic»
+                                    </li>
+                                    <li class="education__item">Bachelor's degree in Finance and Accounting at Poltava
+                                        State Agrarian Academy
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="experience">
+            <div class="container">
+                <p class="suptitle">Explore My</p>
+                <h1 class="title">Experience</h1>
+                <div class="experience-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <h2 class="experience-sub-title">Frontend Development</h2>
+                            <div class="article-container">
+                                <article>
+                                    <img
+                                            src="./assets/checkmark.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                    />
+                                    <div>
+                                        <h3>HTML</h3>
+                                        <p>Experienced</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img
+                                            src="./assets/checkmark.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                    />
+                                    <div>
+                                        <h3>CSS</h3>
+                                        <p>Experienced</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img
+                                            src="./assets/checkmark.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                    />
+                                    <div>
+                                        <h3>SASS</h3>
+                                        <p>Intermediate</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img
+                                            src="./assets/checkmark.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                    />
+                                    <div>
+                                        <h3>JavaScript</h3>
+                                        <p>Intermediate</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img
+                                            src="./assets/checkmark.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                    />
+                                    <div>
+                                        <h3>TypeScript</h3>
+                                        <p>Basic</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img
+                                            src="./assets/checkmark.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                    />
+                                    <div>
+                                        <h3>Bootstrap</h3>
+                                        <p>Intermediate</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="details-container">
+                            <h2 class="experience-sub-title">Backend Development</h2>
+                            <div class="article-container">
+                                <article>
+                                    <img
+                                            src="./assets/checkmark.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                    />
+                                    <div>
+                                        <h3>SQL</h3>
+                                        <p>Basic</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img
+                                            src="./assets/checkmark.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                    />
+                                    <div>
+                                        <h3>Node JS</h3>
+                                        <p>Intermediate</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img
+                                            src="./assets/checkmark.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                    />
+                                    <div>
+                                        <h3>Express JS</h3>
+                                        <p>Intermediate</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img
+                                            src="./assets/checkmark.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                    />
+                                    <div>
+                                        <h3>Git</h3>
+                                        <p>Intermediate</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img
+                                            src="./assets/checkmark.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                    />
+                                    <div>
+                                        <h3>Docker</h3>
+                                        <p>Basic</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img
+                                            src="./assets/checkmark.png"
+                                            alt="Experience icon"
+                                            class="icon"
+                                    />
+                                    <div>
+                                        <h3>PHP</h3>
+                                        <p>Intermediate</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <p class="suptitle">Get in Touch</p>
+                <h1 class="title">Contact Me</h1>
+                <div class="contact-info-upper-container">
+                    <div class="contact-info-container">
+                        <img
+                                src="./assets/email.png"
+                                alt="Email icon"
+                                class="icon contact-icon email-icon"
+                        />
+                        <p><a href="mailto:oleg.tymo@gmail.com">oleg.tymo@gmail.com</a></p>
+                    </div>
+                    <div class="contact-info-container">
+                        <img
+                                src="./assets/linkedin.png"
+                                alt="LinkedIn icon"
+                                class="icon contact-icon"
+                        />
+                        <p><a href="https://www.linkedin.com/in/oleg-tymoshenko-aa3112133/">LinkedIn</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links menu">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2025 Oleh Tymoshenko. All Rights Reserved.</p>
+        </div>
+    </footer>
+</main>
 </body>
 </html>

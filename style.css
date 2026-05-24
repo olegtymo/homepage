@@ -79,10 +79,15 @@ img {
 
 .header-inner {
     display: flex;
+    gap: 2rem;
     justify-content: space-between;
 
     .logo-wrapper {
         width: 10%;
+
+        img {
+            object-fit: contain;
+        }
     }
 }
 
@@ -110,6 +115,8 @@ nav {
 
 .menu {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }
@@ -346,6 +353,8 @@ button:hover {
 
 .about-pic {
     border-radius: 2rem;
+    object-fit: cover;
+    border: 5px solid var(--white-color);
 }
 
 .arrow {
@@ -377,7 +386,6 @@ button:hover {
     display: flex;
     align-items: flex-start;
     gap: 4rem;
-    height: 80%;
 
     @media (width <=750px) {
         flex-direction: column;
@@ -386,6 +394,8 @@ button:hover {
     }
 
     .image-container {
+        flex: 1;
+
         @media (width <=750px) {
             width: 75%;
         }
@@ -566,4 +576,76 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+.languages,
+.additional,
+.hobbies {
+    position: relative;
+    text-align: center;
+}
+
+.languages-details-container,
+.additional-details-container,
+.hobbies-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.languages-containers,
+.additional-containers,
+.hobbies-containers {
+    display: flex;
+    gap: 2rem;
+}
+
+.languages-card,
+.additional-card,
+.hobbies-card {
+    padding: 1.5rem;
+    flex: 1;
+    border-radius: 2rem;
+    border: rgb(163, 163, 163) 0.1rem solid;
+    text-align: center;
+}
+
+.languages-card img {
+    width: 15%;
+    height: auto;
+}
+
+.additional-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.additional-item {
+    font-size: 1rem;
+}
+
+@media (width <=750px) {
+
+    .languages-containers,
+    .additional-containers,
+    .hobbies-containers {
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .languages-details-container,
+    .additional-details-container,
+    .hobbies-details-container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .languages-card,
+    .additional-card,
+    .hobbies-card {
+        padding: 0.5rem;
+        width: 100%;
+    }
 }

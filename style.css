@@ -394,8 +394,6 @@ button:hover {
     }
 
     .image-container {
-        flex: 1;
-
         @media (width <=750px) {
             width: 75%;
         }
